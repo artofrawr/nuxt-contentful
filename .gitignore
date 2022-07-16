@@ -68,6 +68,10 @@ typings/
 # nuxt.js build output
 .nuxt
 
+# storybook output
+.nuxt-storybook
+storybook-static
+
 # Nuxt generate
 dist
 

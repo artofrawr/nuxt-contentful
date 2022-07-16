@@ -1,14 +1,14 @@
 <template>
-  <div>HERO MODULE ({{ id }}): {{ title }}</div>
+  <div :class="bg">HERO MODULE ({{ id }}): {{ title }}</div>
 </template>
 <script>
 export default {
   props: {
-    id: {
+    title: {
       type: String,
       default: '',
     },
-    title: {
+    bg: {
       type: String,
       default: '',
     },
