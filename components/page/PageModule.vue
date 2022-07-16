@@ -1,16 +1,8 @@
 <template>
-  <div v-if="component">
-    <component :is="component" v-bind="module" />
-  </div>
+  <component :is="component" v-if="component" v-bind="module" />
 </template>
 <script>
-import HeroModule from '../hero/HeroModule.vue'
-import MultiPurposeModule from '../content/MultiPurposeModule.vue'
-
-const MODULES = {
-  hero: HeroModule,
-  multipurpose: MultiPurposeModule,
-}
+import MODULES from './modules'
 
 export default {
   props: {
@@ -20,7 +12,6 @@ export default {
     },
   },
   data() {
-    console.log(this.module)
     return {
       component: MODULES[this.module.__typename],
     }

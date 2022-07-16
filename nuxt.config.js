@@ -45,6 +45,14 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [],
 
+  // Tailwind Config
+  tailwindcss: {
+    jit: true,
+    configPath: './tailwind.config.js',
+    exposeConfig: false,
+    injectPosition: 0,
+  },
+
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
 }

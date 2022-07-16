@@ -1,8 +1,9 @@
 <template>
-  <div>
+  <div class="page-modules">
     <div
       v-for="(module, index) in modules"
       :key="`pagemodule-${index}-${module.id}`"
+      class="page-module"
     >
       <PageModule :module="module" />
     </div>
