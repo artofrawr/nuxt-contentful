@@ -4,13 +4,17 @@
 <script>
 export default {
   props: {
+    id: {
+      type: String,
+      default: '',
+    },
     title: {
       type: String,
       default: '',
     },
     bg: {
       type: String,
-      default: '',
+      default: 'bg-red-200',
     },
   },
 }
