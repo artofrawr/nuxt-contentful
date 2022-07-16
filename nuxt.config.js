@@ -47,7 +47,7 @@ export default {
 
   // Tailwind Config
   tailwindcss: {
-    jit: true,
+    mode: 'jit',
     configPath: './tailwind.config.js',
     exposeConfig: false,
     injectPosition: 0,

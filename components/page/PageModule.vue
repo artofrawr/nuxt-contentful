@@ -2,7 +2,13 @@
   <component :is="component" v-if="component" v-bind="module" />
 </template>
 <script>
-import MODULES from './modules'
+import HeroModule from '../hero/HeroModule.vue'
+import MultiPurposeModule from '../content/MultiPurposeModule.vue'
+
+const MODULES = {
+  hero: HeroModule,
+  multipurpose: MultiPurposeModule,
+}
 
 export default {
   props: {
