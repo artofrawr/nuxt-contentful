@@ -2,6 +2,12 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
+  env: {
+    CONTENTFUL_PREVIEW: process.env.CONTENTFUL_PREVIEW || false,
+    CONTENTFUL_SPACE: process.env.CONTENTFUL_SPACE || '',
+    CONTENTFUL_TOKEN: process.env.CONTENTFUL_TOKEN || '',
+  },
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'nuxt-contentful',
@@ -28,6 +34,8 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
+    // https://github.com/nuxt-community/dotenv-module
+    ['@nuxtjs/dotenv', { path: './' }],
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/tailwindcss
