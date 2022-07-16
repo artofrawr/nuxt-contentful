@@ -1,6 +1,6 @@
-const { documentToHtmlString } = require('@contentful/rich-text-html-renderer')
 const _ = require('lodash')
 const contentful = require('contentful')
+const { documentToHtmlString } = require('@contentful/rich-text-html-renderer')
 
 // use default environment config for convenience
 // these will be set via `env` property in nuxt.config.js
@@ -138,7 +138,6 @@ const fieldsParser = (
   return parseFields(dataClone.fields, dataClone.sys)
 }
 
-// export `createClient` to use it in page components
 module.exports = {
   createClient,
   fetchPage,
