@@ -19,7 +19,7 @@
     "@contentful/rich-text-html-renderer": "^15.13.1",
     "@nuxtjs/dotenv": "^1.4.1",
     "contentful": "^9.1.32",
-    "core-js": "^3.19.3",
+    "core-js": "^3.24.0",
     "lodash": "^4.17.21",
     "nuxt": "^2.15.8",
     "vue": "^2.6.14",
